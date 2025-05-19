@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Contact Me</title>
+</head>
+<body>
+  <nav class="navigation">
+    <a href="./index.html">Home</a> 
+    <a href="./interests.html">Interests</a> 
+    <a href="./contact.html">Contact Me</a>
+  </nav>
+<div class="contact">
+    <h1>Contact Me</h1>
+  <a href="mailto:austinsilaghi@outlook.com">Austinsilaghi@outlook.com</a>
+  <a href="tel:+2485502251">248-550-2251</a>
+  <a href="https://www.linkedin.com/in/austin-silaghi-76354a254">My LinkedIn</a>
+  <form onsubmit="handleSubmit(event)" class="form">
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" id="fname"><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" id="lname"><br>
+    <label for="message">Message:</label>
+    <textarea name="message" id=""></textarea><br>
+    <input type="submit" name="submit" id="submit">
+  </form>
+   <script>
+  function handleSubmit(event) {
+    event.preventDefault(); 
+    alert("Message sent, thank you for reaching out!");
+  }
+</script>
+</div>
+
+
+</body>
+</html>
